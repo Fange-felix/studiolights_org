@@ -1,12 +1,15 @@
 {
   "article_id": "SL-XXX",
-  "industry": "industry name (e.g. photography / videography / streaming)",
-  "classid": 15,
+  "language": "en",
+  "industry": "continuous-lighting | strobe-flash | light-modifiers | lighting-setup | buying-guide",
+  "category": "English category name (maps to a WordPress category, e.g. Lighting Setup)",
+  "classid": null,
   "status": "草稿",
   "created_at": "YYYY-MM-DD",
   "updated_at": "YYYY-MM-DD",
   "imported_to_db": false,
   "db_id": null,
+  "wp_url": null,
   "meta_info": {
     "primary_keyword": "primary keyword",
     "secondary_keywords": [
@@ -14,44 +17,77 @@
       "secondary keyword 2",
       "secondary keyword 3"
     ],
-    "search_intent": "informational / commercial / transactional / navigational",
+    "search_intent": "informational | commercial | transactional | navigational",
     "target_engine": "Google",
-    "word_count_target": "1500-2000 words",
-    "title_tag": "SEO Title (50-60 chars, primary keyword near front)",
-    "meta_description": "Meta Description (150-160 chars, keyword + CTA)",
-    "url_slug": "english-url-slug-kebab-case"
+    "word_count_target": "1500-2000",
+    "title_tag": "SEO Title, 50-60 chars, primary keyword near front",
+    "meta_description": "Meta Description, 150-160 chars, keyword + CTA",
+    "url_slug": "english-url-slug-kebab-case",
+    "canonical_url": ""
   },
   "content": {
     "h1": "Article H1 (single, includes primary keyword, matches search intent)",
     "word_count": 0,
+    "intro": "Opening paragraph(s). Must contain the primary keyword within the first 100 words. Sets up the search intent.",
     "h2_sections": [
       {
-        "h2": "1. First H2 Section (covers a subtopic / PAA question)",
-        "content": "Section body. Naturally integrate keywords, clear paragraphs, use tables or lists where they help capture featured snippets."
+        "h2": "1. First H2 (covers a subtopic or PAA question)",
+        "content": "Section body. Naturally integrate primary + secondary keywords. Use tables or lists where they help capture featured snippets."
       },
       {
-        "h2": "2. Second H2 Section",
-        "content": "Continue writing..."
+        "h2": "2. Second H2",
+        "content": "Section body..."
       }
     ],
-    "html_content": "<h2>1. First H2 Section</h2><p>HTML body...</p>"
+    "faq": [
+      {
+        "question": "People Also Ask style question (contains keyword)",
+        "answer": "Concise answer, 40-60 words, can be lifted as a featured snippet."
+      }
+    ],
+    "html_content": "<h2>1. First H2</h2><p>Body...</p><h2>FAQ</h2><h3>Question?</h3><p>Answer.</p>"
   },
-  "images": {
+  "media": {
     "title_pic": "",
-    "content_images": []
+    "title_pic_alt": "descriptive alt text containing keyword",
+    "content_images": [
+      {
+        "src": "",
+        "alt": "descriptive alt text",
+        "caption": ""
+      }
+    ]
+  },
+  "links": {
+    "internal": [
+      {
+        "article_id": "SL-0XX",
+        "anchor": "descriptive anchor text"
+      }
+    ],
+    "external": [
+      {
+        "url": "https://authority-source.example",
+        "anchor": "anchor text"
+      }
+    ]
+  },
+  "schema": {
+    "type": "Article",
+    "faq_json_ld": ""
   },
   "seo_checklist": {
     "title_length_chars": 0,
     "meta_description_length_chars": 0,
     "primary_keyword_in_h1": false,
     "primary_keyword_in_first_paragraph": false,
-    "primary_keyword_density": "",
+    "primary_keyword_density": "1-2%",
     "h2_count": 0,
     "contains_table": false,
     "contains_faq_section": false,
+    "internal_link_count": 0,
     "mobile_optimized": true,
-    "original_content": true,
-    "simplified_chinese": false
+    "original_content": true
   },
   "notes": "Article notes (e.g. needs case images, needs internal link to SL-0XX, etc.)"
 }
